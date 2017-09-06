@@ -52,6 +52,7 @@ var playerPointsElem = document.getElementById('js-playerPoints'),
   player.name = prompt('Please enter your name', 'Your name');
   if (player.name) {
     player.score = computer.score = 0;
+    playerResultElem.innerHTML = computerResultElem.innerHTML = '';
     gameState = 'started';
     title.innerText='New Game';
     setGameElements();
