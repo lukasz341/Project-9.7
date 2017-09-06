@@ -33,6 +33,7 @@ var gameState = 'notStarted',  //started // ended
       break;
     case 'ended':
         newGameBtn.innerText = 'Play again';
+		player.score = computer.score = 0;
     case 'notStarted':
     default:
         newGameElem.style.display = 'block';
