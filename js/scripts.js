@@ -82,8 +82,8 @@ var playerPickElem = document.getElementById('js-playerPick'),
     
     checkRoundWinner(playerPick, computerPick);
     setGameElements();
-     setGamePoints();
-     checkPoints();
+    setGamePoints();
+    checkPoints();
 }
 
 function checkRoundWinner(playerPick, computerPick) {
@@ -125,10 +125,11 @@ function checkPoints() {
 		if (player.score>computer.score) {
 			var winner=player.name;
 		}
-		else
+		else {
 		winner='Computer';
-		title.innerText='The winner is: '+winner;
-
+		
+		}
+	title.innerText='The winner is: '+winner;
 	}
 }
     
